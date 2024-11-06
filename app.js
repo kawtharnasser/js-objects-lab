@@ -20,12 +20,13 @@ const game = {
 }
 
 //Exercize 1
+//console.log('//Exercize 1 Answer:')
 //console.dir(pokemon, { maxArrayLength: null })
-
 //console.log(pokemon[59].name)
 
 //Exersize 2
-//console.log(game)
+console.log('//Exercize 2 Answer:')
+console.log(game)
 
 //Exersize 3
 /*
@@ -36,9 +37,8 @@ Exercise 3
 
 Solve Exercise 3 here:
 */
-
 game.difficulty = 'Hard'
-//console.dir(game)
+console.log('//Exercize 3 Answer: ' + game.difficulty)
 
 /*
 Exercise 4
@@ -48,12 +48,14 @@ Exercise 4
 
 Solve Exercise 4 here:
 */
+console.log('//Exercize 4 Answer: ')
 pokemon.forEach((pok) => {
   if (pok.starter === true && pok.name === 'Pikachu') {
     game.party.push(pok.name)
   }
 })
-//console.log(game.party)
+
+console.log(game.party)
 
 /*
 Exercise 5
@@ -72,7 +74,8 @@ pokemon.forEach((pok) => {
     game.party.push(pok.name)
   }
 })
-//console.log(game.party)
+console.log('//Exercize 5 Answer: ')
+console.log(game.party)
 
 /*
 Exercise 6
@@ -87,7 +90,8 @@ game.gyms.forEach((gym) => {
     gym.completed = true
   }
 })
-//console.log(game.gyms)
+console.log('//Exercize 6 Answer: ')
+console.log(game.gyms)
 
 /*
 Exercise 7
@@ -105,7 +109,9 @@ More Hints: The existing starter Pokemon will be *replaced* in your party with t
 
 Solve Exercise 7 here:
 */
+console.log('//Exercize 7 Answer: ')
 game.party.splice(0, 1, 'Raichu')
+console.log(game.party)
 
 /*
 Exercise 8
@@ -114,6 +120,7 @@ Exercise 8
 
 Solve Exercise 8 here:
 */
+console.log('//Exercize 8 Answer: ')
 game.party.forEach((member) => {
   console.log(member)
 })
@@ -126,12 +133,15 @@ Exercise 9
 
 Solve Exercise 9 here:
 */
+console.log('')
+console.log('//Exercize 9 Answer: ')
 console.log('starter pokemons')
 pokemon.forEach((pok) => {
   if (pok.starter === true) {
     console.log(pok.name)
   }
 })
+console.log('')
 
 /*
 Exercise 10
@@ -152,7 +162,8 @@ pokemon.forEach((pok) => {
     catchPokemon(pok.name)
   }
 })
-//console.log(game.party)
+console.log('//Exercize 10 Answer: ')
+console.log(game.party)
 
 /*
 Exercise 11
@@ -166,6 +177,7 @@ Also, log the `game.items` array to confirm that the pokeball quantity is being 
 
 Solve Exercise 11 here:
 */
+console.log('//Exercize 11 Answer: ')
 catchPokemon = (pokemonObj) => {
   game.party.push(pokemonObj)
   game.items[1].quantity -= 1
@@ -182,12 +194,13 @@ Exercise 12
 
 Solve Exercise 12 here:
 */
+console.log('//Exercize 12 Answer: ')
 game.gyms.forEach((gym) => {
   if (gym.difficulty < 6) {
     gym.completed = true
   }
 })
-//console.log(game.gyms)
+console.log(game.gyms)
 
 /*
 Exercise 13
@@ -211,6 +224,7 @@ For example, if five gym objects have a value of `true` on their `completed` pro
 
 Solve Exercise 13 here:
 */
+console.log('//Exercize 13 Answer: ')
 let gymTally = { completed: 0, incomplete: 0 }
 const gymStatus = () => {
   game.gyms.forEach((gym) => {
@@ -236,6 +250,7 @@ This method should:
 
 Solve Exercise 14 here:
 */
+console.log('//Exercize 14 Answer: ')
 const partyCount = () => {
   let pokNum = 0
   game.party.forEach((members) => {
@@ -252,12 +267,13 @@ Exercise 15
 
 Solve Exercise 15 here:
 */
+console.log('//Exercize 15 Answer: ')
 game.gyms.forEach((gym) => {
   if (gym.difficulty < 8) {
     gym.completed = true
   }
 })
-//console.log(game.gyms)
+console.log(game.gyms)
 
 /*
 Exercise 16
@@ -266,4 +282,5 @@ Exercise 16
 
 Solve Exercise 16 here:
 */
+console.log('//Exercize 16 Answer: ')
 console.log(game)
